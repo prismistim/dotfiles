@@ -1,10 +1,10 @@
 #!/bin/zsh
 
-cd ~
+cd "${HOME}"
 mkdir Workspaces
 
 xcode-select --install
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | zsh
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 
 cp ./dotfiles/.Brewfile ~/.Brewfile
 
